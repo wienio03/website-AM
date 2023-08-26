@@ -1,0 +1,7 @@
+.navbar-brand {
+  position: relative;
+  background: url(../public/am-logo.png) center center;
+  width: 75px;
+  max-height: 70px;
+  background-size: contain;
+}
