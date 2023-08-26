@@ -1,11 +1,12 @@
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Nav from "./Nav";
-
+import MainNav from "./MainNav";
+import SecondaryNav from "./SecondaryNav";
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <SecondaryNav />
+      <MainNav />
     </div>
   );
 }

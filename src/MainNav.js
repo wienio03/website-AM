@@ -1,13 +1,18 @@
 //Navbar component//
 //---------------//
-
-const Nav = () => {
+const MainNav = () => {
   const logo = "./am-logo.png";
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#home">
-          <img src={logo} alt="am-logo" width="50" height="50" />
+          <img
+            className="brand-img"
+            src={logo}
+            alt="am-logo"
+            width="50" 
+            height="30"
+          />
           Akademia Maturzystów
         </a>
         <button
@@ -34,12 +39,15 @@ const Nav = () => {
               >
                 Kursy
               </a>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <p className="mb-2">Test</p>
+                  <a className="dropdown-item" href="#">Stacjonarne Olkusz</a>
                 </li>
                 <li>
-                  <p className="mb-2">Test</p>
+                  <div className="dropdown-divider"></div>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">On-line</a>
                 </li>
               </ul>
             </li>
@@ -55,4 +63,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default MainNav;

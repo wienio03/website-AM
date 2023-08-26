@@ -1,7 +1,13 @@
-.navbar-brand {
-  position: relative;
-  background: url(../public/am-logo.png) center center;
-  width: 75px;
-  max-height: 70px;
-  background-size: contain;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.navbar-brand{
+    font-family: Lato, sans-serif;
+}
+
+.brand-img {
+    transform: translateY(-15%)
+}
+
+.dropdown-menu {
+    text-align: center;
 }
